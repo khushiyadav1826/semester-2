@@ -1,0 +1,118 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1f3c40, #0f2027);
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  gap: 12px;
+}
+
+.input-container input {
+  padding: 10px 14px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-container button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #ff914d, #ff6a00);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-container button:hover {
+  box-shadow: 0 6px 15px rgba(255, 145, 77, 0.5);
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WEATHER CARD */
+.weather-container {
+  background: rgba(255, 255, 255, 0.15);
+  
+  color: #fff;
+  padding: 30px 40px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.8s ease;
+}
+
+/* TEMPERATURE */
+.temperature {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+/* LOCATION & DATE */
+.location-date {
+  text-align: center;
+}
+
+.location {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.time,
+.day,
+.date {
+  display: block;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* WEATHER STATUS */
+.weather-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.condition {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
